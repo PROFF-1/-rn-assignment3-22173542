@@ -25,6 +25,23 @@ export default function App(){
             </View>
           </View>
        </View>
+
+       //Input and filter section
+       <View style={styles.inputFilterContainer}>
+          //Input
+          <View >
+            <TextInput
+              placeholder='Search'
+              placeholderTextColor={'black'}
+              style={styles.inputContainer}
+            />
+          </View>
+          //Filter
+          <View style={styles.filterBackground}>
+            <Image source={filterIcon} styles={styles.filter}/>
+          </View>
+       </View>
+
     </View>
   );
 }
