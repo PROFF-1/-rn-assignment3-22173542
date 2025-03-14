@@ -77,8 +77,54 @@ export const styles = StyleSheet.create({
   },
 
   categorySection:{
+    fontSize:20,
+    fontStyle:'lato',
+    fontWeight:700,
+    marginLeft :20,
+    marginBottom:12
+  },
+  
+  search:{
+    position:'absolute',
+    top:15,
+    left:14.97
+  },
+
+  taskCardHolder:{
+    marginLeft: 20,
+    marginRight: 20,
+    marginBottom:27
+    // width:396,
+    // height:192,
+   
     
-  }
+  },
+
+  eachTaskCard:{
+    backgroundColor:'white',
+    width:186,
+    height:192,
+    borderRadius: 15,
+    marginLeft: 24,
+    paddingTop: 14,
+    paddingLeft: 16,
+    height:192,
+    width:186
+  },
+
+  taskTitle:{
+    fontSize: 16,
+    fontWeight: 700,
+    fontFamily: 'lato'
+  },
+
+  taskNumber:{
+    fontSize: 12
+  },
+
+ 
+
+
 
 
   
