@@ -12,13 +12,13 @@ export const styles = StyleSheet.create({
   },
 
   header:{
-    width: 354,
     height:52,
     display :'flex',
     flexDirection:'row',
     justifyContent:'space-between',
     marginLeft: 20,
-    marginBottom:30
+    marginBottom:30,
+    marginRight:20
   },
 
   bigHeaderText:{
@@ -46,14 +46,15 @@ export const styles = StyleSheet.create({
     width:46,
     height: 45
   },
+
   inputFilterContainer:{
     height:49,
-    width:353,
     marginLeft:20,
     display:'flex',
     flexDirection:'row',
     justifyContent:'space-between',
-    marginBottom: 30
+    marginBottom: 30,
+    marginRight:20
   },
 
   inputContainer:{
@@ -119,10 +120,40 @@ export const styles = StyleSheet.create({
   },
 
   taskNumber:{
-    fontSize: 12
+    fontSize: 12,
   },
 
- 
+  ongoingTask:{
+    marginLeft: 20,
+    marginRight: 20,
+    height: 450,
+  },
+
+  ongoingTaskContainer:{
+    height:128,
+    backgroundColor:'white',
+    marginBottom: 12,
+    borderRadius: 15,
+    borderColor:'#E8D1BA',
+    borderWidth: 2,
+    paddingTop: 46,
+    paddingLeft: 16
+  },
+
+  ongoingTaskSection:{
+    fontSize:20,
+    fontStyle:'lato',
+    fontWeight:700,
+    marginLeft :20,
+    marginBottom:12
+  },
+
+  ongoingTaskName:{
+    fontSize:16,
+    fontWeight:700,
+    fontFamily:'lato'
+  },
+  
 
 
 

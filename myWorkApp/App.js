@@ -5,7 +5,7 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 const profileIcon =require('./assets/person.png');
 const filterIcon =require('./assets/filterIcon.png');
 const taskImage1 = require('./assets/image1.png');
-const taskImage2 = require('./assets/image2.png')
+const taskImage2 = require('./assets/image2.png');
 
 //This is the stylesheet of the screen. It has been created as a component
 export default function App(){
@@ -60,6 +60,47 @@ export default function App(){
       image:taskImage1
     }
   ]
+
+  const onGoingTaskList=[
+    {
+      id:1,
+      title:'Mobile App Development'
+    },
+    {
+      id:2,
+      title:'Web Development'
+    },
+    {
+      id:3,
+      title:'Trading'
+    },
+    
+    {
+      id:4,
+      title:'Cooking'
+    },
+    
+    {
+      id:5,
+      title:'Training'
+    },
+    
+    {
+      id:6,
+      title:'Preach'
+    },
+    
+    {
+      id:7,
+      title:'Watch football'
+    },
+    
+    {
+      id:8,
+      title:'Take a nap'
+    }
+
+  ];
   return (
     <View style={styles.container}>
 
@@ -102,6 +143,8 @@ export default function App(){
       <Text style={styles.categorySection} >
         Categories
       </Text>
+
+      //Task cards
        <View style={styles.taskCardContainer}>
         <FlatList
         data={taskCard}
@@ -117,6 +160,28 @@ export default function App(){
         style={styles.taskCardHolder}
         showsHorizontalScrollIndicator={false}
        />
+       </View>
+
+       //On goingTask session
+
+       <Text style={styles.ongoingTaskSection}>Ongoing Task</Text>
+
+       <View style={styles.holder}>
+        <FlatList
+         data={onGoingTaskList}
+         renderItem={
+          ({item})=>(
+            <View style={styles.ongoingTaskContainer}>
+              <Text style={styles.ongoingTaskName}>
+                {item.title}
+              </Text>
+            </View>
+          )
+         }
+         showsVerticalScrollIndicator={false}
+         keyExtractor={(item)=>item.id}
+         style={styles.ongoingTask}
+        />
        </View>
 
     </View>
